@@ -1,0 +1,113 @@
+// typography baselines and @font face setups
+
+
+@font-face {
+	font-family: 'opensansreg';
+	src: url('fonts/opensans-regular-webfont.eot');
+	src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+	url('fonts/opensans-regular-webfont.woff') format('woff'),
+	url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+	url('fonts/opensans-regular-webfont.svg#opensansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'opensansbold';
+	src: url('fonts/opensans-bold-webfont.eot');
+	src: url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/opensans-bold-webfont.woff2') format('woff2'),
+	url('fonts/opensans-bold-webfont.woff') format('woff'),
+	url('fonts/opensans-bold-webfont.ttf') format('truetype'),
+	url('fonts/opensans-bold-webfont.svg#opensansbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'opensanssemibold';
+	src: url('fonts/opensans-semibold-webfont.eot');
+	src: url('fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/opensans-semibold-webfont.woff2') format('woff2'),
+	url('fonts/opensans-semibold-webfont.woff') format('woff'),
+	url('fonts/opensans-semibold-webfont.ttf') format('truetype'),
+	url('fonts/opensans-semibold-webfont.svg#opensanssemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'opensanslight';
+	src: url('fonts/opensans-light-webfont.eot');
+	src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/opensans-light-webfont.woff2') format('woff2'),
+	url('fonts/opensans-light-webfont.woff') format('woff'),
+	url('fonts/opensans-light-webfont.ttf') format('truetype'),
+	url('fonts/opensans-light-webfont.svg#opensanslight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'titilliumbold';
+    src: url('fonts/titillium-bold-webfont.eot');
+    src: url('fonts/titillium-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/titillium-bold-webfont.woff2') format('woff2'),
+    url('fonts/titillium-bold-webfont.woff') format('woff'),
+    url('fonts/titillium-bold-webfont.ttf') format('truetype'),
+    url('fonts/titillium-bold-webfont.svg#titilliumbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'titilliumsemibold';
+    src: url('fonts/titillium-semibold-webfont.eot');
+    src: url('fonts/titillium-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/titillium-semibold-webfont.woff2') format('woff2'),
+    url('fonts/titillium-semibold-webfont.woff') format('woff'),
+    url('fonts/titillium-semibold-webfont.ttf') format('truetype'),
+    url('fonts/titillium-semibold-webfont.svg#titilliumsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'titilliumregular';
+    src: url('fonts/titillium-regular-webfont.eot');
+    src: url('fonts/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/titillium-regular-webfont.woff2') format('woff2'),
+    url('fonts/titillium-regular-webfont.woff') format('woff'),
+    url('fonts/titillium-regular-webfont.ttf') format('truetype'),
+    url('fonts/titillium-regular-webfont.svg#titilliumsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h3, a {
+    @include titilliumbold;
+    margin: 0;
+}
+
+h4 {
+    @include titilliumregular;
+    margin: 0;
+}
+
+h2 {
+	@include opensansbold;
+    margin: 0;
+}
+
+h5 {
+    @include opensanssemibold;
+    margin: 0;
+}
+
+
+p {
+	@include opensansreg;
+}

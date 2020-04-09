@@ -1,0 +1,304 @@
+.hero_section {
+    position: relative;
+
+    .hero_top {
+        padding-top: 30%;
+        background: url(../images/hero-bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: left;
+
+        @include media($tablet) {
+            padding: 20px 0;
+            background-position: 59%;
+        }
+
+        @include media($mobile) {
+            background: $lightGray;
+            padding: 20px 0;
+        }
+    }
+
+    .hero_bottom {
+        background: $grayBlue;
+        color: $white;
+        padding: 15px 0;
+
+        h3 {
+            @include media($mobile) {
+                font-size: 16px;
+            }
+        }
+
+        ul {
+            margin: 15px 0 0;
+
+            li {
+                padding-left: 24px;
+                margin-right: 5%;
+
+                @include media($desktop) {
+                    margin-right: 1%;
+                }
+
+                @include media($mobile) {
+                    font-size: 14px;
+                }
+
+                &:before {
+                    content: '';
+                    background: url(../images/check-mark.png) no-repeat;
+                    width: 16px;
+                    height: 14px;
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                    background-size: 100%;
+
+                    @include media($mobile) {
+                        width: 12px;
+                        height: 12px;
+                        left: 6px;
+                        top: 8px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+
+    .form_wrap {
+        position: absolute;
+        bottom: -90px;
+        right: 5%;
+        width: 420px;
+        z-index: 99;
+        background: $white;
+
+
+        @include media($desktop) {
+            width: 390px;
+            right: 20px;
+            bottom: -128px;
+        }
+
+        @include media($tablet) {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            float: right;
+        }
+
+        @include media($mobile) {
+            float: none;
+            margin: 0 auto;
+        }
+
+        @include media($smallMobile) {
+            width: 100%;
+        }
+
+        .form_heading {
+            background: $lightBlue;
+            color: $white;
+            padding: 5px 0;
+
+            h3 {
+                font-size: 32px;
+
+                @include media($desktop) {
+                    font-size: 28px;
+                }
+            }
+
+            p {
+                font-size: 17px;
+                margin: 0;
+
+                @include media($desktop) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        form {
+            background: $white;
+            padding: 22px;
+
+            .row {
+
+                @include media($desktop) {
+                    margin-bottom: 0;
+                }
+            }
+
+            input {
+                border: 1px solid #c8c8c8;
+                color: $darkGray;
+                height: 44px;
+                -webkit-box-shadow: -4px 8px 15px -14px #000;
+                -moz-box-shadow: -4px 8px 15px -14px #000;
+                box-shadow: -4px 8px 15px -14px #000;
+                font-size: 16px;
+
+                @include media($desktop) {
+                    height: 38px;
+                }
+            }
+
+            button {
+                @include opensansbold;
+                display: block;
+                background: $darkGray;
+                width: 100%;
+                font-size: 20px;
+                color: $white;
+                cursor: pointer;
+
+                &:hover {
+                    background: #1c1c1c;
+                }
+            }
+        }
+
+        .success_message {
+            padding: 20px 5px;
+            height: 300px;
+
+            h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+
+                @include media($mobile) {
+                    font-size: 22px;
+                }
+            }
+
+            p {
+                color: $textGray;
+                padding: 0 5%;
+
+                @include media($mobile) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .errors p {
+            font-size: 14px;
+            margin: 0;
+            height: 10px;
+        }
+    }
+}
+
+.bottom_section {
+    background: #f8f8f8;
+    padding: 40px 0 100px;
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+
+        @include media($mobile) {
+            font-size: 18px;
+        }
+
+        span {
+            @include titilliumbold;
+        }
+    }
+
+    p {
+        color: $textGray;
+
+        @include media($mobile) {
+            font-size: 14px;
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+        margin: 20px 0 10px;
+
+        @include media($mobile) {
+            font-size: 14px;
+        }
+    }
+
+    li {
+        padding-left: 20px;
+
+        &:before {
+            content: '';
+            background: url(../images/checkmark-blue.png) no-repeat;
+            width: 15px;
+            height: 15px;
+            background-size: 100%;
+            position: absolute;
+            left: 0;
+            top: 5px;
+
+            @include media($mobile) {
+                width: 12px;
+                height: 12px;
+                left: 4px;
+                top: 8px;
+            }
+        }
+    }
+
+    .button_wrap {
+        margin-top: 30px;
+        -webkit-box-shadow: 0 0 10px rgba(24,133,153,1);
+        -moz-box-shadow: 0 0 10px rgba(24,133,153,1);
+        box-shadow: 0 0 10px rgba(24,133,153,1);
+        display: inline-block;
+        border-radius: 18px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+
+        @include media($smallMobile) {
+            width: 100%;
+        }
+
+        a {
+            font-size: 20px;
+            color: $white;
+            background: $lightBlue;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            padding: 6px 20px;
+
+            @include media($smallMobile) {
+                display: block;
+            }
+
+            &:hover {
+                background: #1999b0;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 30px 0 20px;
+    background: $lightGray;
+    color: $textGray;
+
+    p {
+        font-size: 14px;
+
+        @include media($mobile) {
+            font-size: 12px;
+        }
+    }
+}

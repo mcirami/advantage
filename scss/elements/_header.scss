@@ -1,0 +1,88 @@
+.top_header {
+    background: $purple;
+    color: $white;
+    padding: 20px 0;
+
+    h3 {
+        @include media($mobile) {
+            font-size: 16px;
+        }
+    }
+}
+
+.bottom_header {
+    padding: 20px 0;
+
+    .logo {
+        @include media($mobile) {
+            @include span-columns(4);
+            text-align: center;
+        }
+
+        img {
+            @include media($tablet) {
+                width: 200px;
+            }
+
+            @include media($mobile) {
+                margin: 0 auto;
+                float: none;
+            }
+        }
+    }
+
+    .header_right {
+
+        @include media($mobile) {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        div:first-child {
+            @include media($mobile) {
+                margin-left: auto;
+            }
+        }
+
+        div:last-child {
+            @include media($mobile) {
+                margin-right: auto;
+            }
+        }
+
+        img {
+            padding-right: 20px;
+            border-right: 2px solid #d5d5d5;
+
+            @include media($tablet) {
+                width: 38px;
+            }
+
+            @include media($mobile) {
+                padding-right: 15px;
+                width: 26px;
+            }
+        }
+    }
+
+    h5 {
+        font-size: 22px;
+        padding-left: 20px;
+        margin: auto;
+
+        @include media($tablet) {
+            font-size: 18px;
+        }
+
+        @include media($mobile) {
+            padding-left: 15px;
+            font-size: 14px;
+        }
+
+        span {
+            @include opensansbold;
+            color: $lightBlue;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+h2, h3, h4 {
+    margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 62.5%;
+	min-height: 100%;
+	float: left;
+	width: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: $darkGray;
+	
+	&.fixed {
+		position: fixed;
+	}
+}
+
+.full_width {
+	@include span-columns(12);
+}
+
+a {
+	text-decoration: none;
+	/*@include transition(color 1s ease-in);*/
+	cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	float: left;
+}
